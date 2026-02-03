@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Stop Alarm</button>
+   <script>
+
+    let stopAlarm;
+    let btn = document.querySelector('button')
+
+    function setAlarm(){
+        stopAlarm = setTimeout(()=>{
+            console.log('Alarm Beeping.....')
+        },5000)
+    }
+    function stopAlarmFunction(){
+        clearTimeout(stopAlarm)
+        
+    }
+    setAlarm()
+    btn.addEventListener('click',stopAlarmFunction)
+   </script>
+</body>
+</html>
