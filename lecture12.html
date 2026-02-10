@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let restaurant = true;
+
+        // let eating = new Promise((resolve,reject)=>{
+        //     if (restaurant){
+        //         resolve("Restaurant open")
+        //     }else{
+        //         reject("Restaurant closed")
+        //     }
+        // })
+        // eating.then(res=>console.log(res)).catch(err=>console.log(err))
+
+        let assignment = true;
+
+        let homework = new Promise((resolve, reject) => {
+            if (assignment) {
+                resolve("Assignment Done")
+            } else {
+                reject("Assignment not done")
+            }
+        })
+        homework.then(res => console.log(res)).catch(err => console.log(err))
+
+    </script>
+
+</body>
+
+</html>
